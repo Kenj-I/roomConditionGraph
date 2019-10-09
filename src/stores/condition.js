@@ -86,7 +86,7 @@ const actions = {
             temperatures.unshift(data.temperature);
             humiditys.unshift(data.humidity);
             pressures.unshift(data.pressure);
-            createdAts.unshift(dateFunc.timestamp2ymd(data.createdAt.seconds));
+            createdAts.unshift(dateFunc.timestamp2md(data.createdAt.seconds));
             // createdAts.push(data.createdAt);
           });
 

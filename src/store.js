@@ -4,6 +4,7 @@ import createPersistedState from "vuex-persistedstate";
 
 import user from "./stores/user.js";
 import condition from "./stores/condition.js";
+import light from "./stores/light.js";
 
 Vue.use(Vuex);
 
@@ -15,6 +16,7 @@ export default new Vuex.Store({
   ],
   modules: {
     user,
-    condition
+    condition,
+    light
   }
 });

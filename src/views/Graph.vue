@@ -39,6 +39,12 @@
         :options="this.options"
         class="graph"
       />
+      <graph
+        v-if="this.$store.state.light.loaded"
+        :data="this.$store.getters['light/lightsData']"
+        :options="this.options"
+        class="graph"
+      />
     </div>
   </div>
 </template>
@@ -55,6 +61,7 @@ export default {
   }),
   mounted() {
     this.$store.dispatch("condition/fetch");
+    this.$store.dispatch("light/fetch");
   }
 };
 </script>
