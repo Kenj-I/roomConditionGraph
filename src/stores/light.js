@@ -37,7 +37,7 @@ const actions = {
   async fetch({ commit }) {
     try {
       const db = firebase.dbInit();
-      let lightDb = db.collection("light");
+      let lightDb = db.collection("lights");
       lightDb
         .orderBy("createdAt", "desc")
         .limit(100)
