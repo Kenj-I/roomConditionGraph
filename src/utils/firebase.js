@@ -10,14 +10,16 @@ const firebaseConfig = {
   databaseURL: process.env.VUE_APP_DATABASEURL,
   projectId: process.env.VUE_APP_PROJECTID,
   storageBucket: process.env.VUE_APP_STORAGEBUCKET,
-  messagingSenderId: process.env.VUE_APP_MESSAGINGSENDER,
+  messagingSenderId: process.env.VUE_APP_MESSAGINGSENDERID,
   appId: process.env.VUE_APP_APPID
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+let firebaseApp;
 
 export default {
   init() {
+    firebaseApp = firebase.initializeApp(firebaseConfig);
+    console.log(firebaseConfig);
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
   },
   login() {
