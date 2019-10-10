@@ -19,7 +19,6 @@ let firebaseApp;
 export default {
   init() {
     firebaseApp = firebase.initializeApp(firebaseConfig);
-    console.log(firebaseConfig);
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
   },
   login() {
