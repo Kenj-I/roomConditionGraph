@@ -11,10 +11,11 @@
             >
             （温度と湿度の測定値が正確じゃないので手動補正してます）
           </li>
+          <li>Cloud Firestore</li>
+          <li>Firebase Authentication</li>
           <li>Golang</li>
-          <li>Cloud FireStore</li>
+          <li>Python</li>
           <li>Vue.js</li>
-          <li>Firebase Auth</li>
           <li>Vuetify</li>
           <li>vue-chartjs</li>
         </ul>
