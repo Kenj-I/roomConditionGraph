@@ -4,9 +4,6 @@
       >Google login</v-btn
     >
     <p v-if="this.error">{{ this.$store.state.user.error }}</p>
-    <p class="text-center mt-2 caption">
-      ※Googleログインを使用しますが個人情報は保存しておりません
-    </p>
   </div>
 </template>
 
